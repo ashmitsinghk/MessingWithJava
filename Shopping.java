@@ -42,6 +42,7 @@ class Account {
     this.two = this.two + two;
     one = money / 1;
     money = money - (one * 1);
+    this.one = this.one + one;
     this.balance = this.balance + cash;
     System.out.println("Your updated balance is INR " + this.balance + ".");
     System.out.println("Do you want to view your denominations? (Y/N)");
