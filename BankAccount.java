@@ -101,12 +101,14 @@ class BankAccount {
     char confirmation = input.next().charAt(0);
     switch (confirmation) {
       case 'Y':
+      case 'y':
         this.bal = this.bal + totalAmount;
         System.out.println(
           "INR " + totalAmount + " succesfully deposited to your account."
         );
         break;
       case 'N':
+      case 'n':
         System.out.println("Please re-enter the correct information:");
         this.depositMoney();
     }
